@@ -1,0 +1,225 @@
+@charset "UTF-8";
+
+/*CSS reset*/
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;	
+}
+
+/* CSS Document */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+.cf{display: -webkit-flex;
+display: -moz-flex;
+display: -ms-flex;
+display: -o-flex;
+display: flex;-webkit-flex-wrap: wrap;
+-moz-flex-wrap: wrap;
+-ms-flex-wrap: wrap;
+-o-flex-wrap: wrap;
+flex-wrap: wrap;}
+
+
+/*CSS que atinge todos as tags h1 do site*/
+h1{
+	margin: 20px 0 20px 0; 
+	font-size: 20px;
+}
+
+/*CSS que atinge todos as tags h2 do site*/
+h2{
+	font-size: 18px;
+}
+
+ul{
+	list-style: none;
+}
+
+body{
+	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:16px;
+}
+
+/*CSS WRAPPER*/
+/*Div que engloba todo o conteudo da pagina*/
+#wrapper{
+	width:100%;
+	max-width:980px;
+	margin:0 auto;
+	background-image: url(imagens/bgSection.jpg);
+	border:1px solid #a79f9f;
+	background-attachment: fixed;
+}
+
+/*CSS MENU*/
+/*Menu da pagina*/
+.menu{
+    width: 100%;
+    background-color: #cdcdcd;
+    text-align: center;
+    clear: both;
+    border-bottom: 1px solid #a09a9a;
+    padding: 15px 0;
+    font-size: 16px;
+}
+/*lista nao ordenada do menu*/
+.menu ul li{
+	display: inline-block;
+	padding: 2px 5px;
+}
+.menu ul li a{
+	text-decoration: none;
+	color: #4e504e;
+}
+/* hover a */
+.menu ul li:hover a{
+	color:#252020;
+	text-decoration:underline;
+}
+
+/*CSS ASIDE*/
+/*Barra lateral, foto e links das redes sociais*/
+.user-aside{
+	width: 20%;
+	background-color: #e5e2e2;
+	text-align: center;
+	opacity: 0.8;
+	font-family: comic;
+	padding: 300px 0 300px 0 ;
+}
+.user-aside .avatar img{
+	border-radius: 100%;
+	border: 2px solid #4e504e;
+}
+/* Lista de ícones social*/
+.icons-social{
+	display:inline-block;
+	width:100%;
+}
+.icons-social li{
+	display:inline-block;
+	margin: 5px 5px;
+}
+.icons-social li:hover a{
+	opacity:.9;
+}
+.icons-social img{
+	width:42px;
+	height:42px;
+}
+
+/*CSS RODAPE*/
+/*rodape da pagina */
+#footer-main{
+	width: 100%;
+    background-color: #cdcdcd;
+    text-align: center;
+    clear: both;
+    border-top: 1px solid #a09a9a;
+    padding: 15px 0;
+    font-size: 12px;
+}
+
+/*Contem todos os articles do site*/
+.article-main{
+	width: 80%;
+	background-color: #ffffff;
+	text-align: left; 
+	padding: 0 5px;
+}
+
+/*CSS HOBBIES*/
+.image-hobbie img{
+	margin: 20px 0 0 0;
+	border: 5px solid #4e504e;
+	width: 576px;
+	height: 432px;
+}
+
+/*CSS contato*/
+.div-form{
+	border: 1px solid #4e504e;
+	padding: 10px 10px; 
+	margin: 20px 0 20px 0;
+	position: relative;
+}
+.article-main .div-form .button{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #a79f9f;
+	padding: 10px 20px;
+	background: -moz-linear-gradient(
+		top,
+		#ffffff 0%,
+		#ffffff 50%,
+		#b5b5b5);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#ffffff),
+		color-stop(0.50, #ffffff),
+		to(#b5b5b5));
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	border: 2px solid #a79f9f;
+	-moz-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 3px rgba(255,255,255,1);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 3px rgba(255,255,255,1);
+	box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 3px rgba(255,255,255,1);
+	text-shadow:
+		0px -1px 0px rgba(000,000,000,0.2),
+		0px 1px 0px rgba(255,255,255,1);
+}
+.article-main .div-form .textarea{
+	height: 93px;
+	width: 400px;
+	top: 10px;
+	right: 10px;
+	position: absolute;
+	float: right;
+}
+
+/*CSS portfolio*/
+.port-container{
+	width: 80%;
+	background-color: #ffffff;
+	text-align: left; 
+	padding: 0 5px;
+}
+
+.port-container .newsletter img{
+	height: 425px;
+	width: 434,5;
+	border: 5px solid #4e504e;
+}
+.port-container .colagem-digital img{
+	height: 425px;
+	width: 225;
+	border: 5px solid #4e504e;
+}
+
+.port-container .port-border img{
+	border: 5px solid #4e504e;
+}
+
+/*CSS sobre*/
+.article-main .about-me img{
+	margin: 20px 0 0 0;
+	border: 5px solid #4e504e;
+	width: 576px;
+	height: 432px;
+}
+
